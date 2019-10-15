@@ -12,7 +12,7 @@ int main(void)
     res=curl_easy_perform(curl);
     if(res!=CURLE_OK)
       fprint(stderr,"curl_easy_perform() failed:%s\n",
-        curl_easy_strerror(curl);
+        curl_easy_strerror(curl));
       curl_easy_cleanup(curl);
   }
   return 0;
